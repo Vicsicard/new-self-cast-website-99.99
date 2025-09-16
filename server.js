@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Serve static files
 app.use(express.static(path.join(__dirname)));
@@ -100,8 +100,13 @@ app.get('/images', (req, res) => {
     });
 });
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-    console.log(`Image uploader available at http://localhost:${port}/image-uploader.html`);
-});
+// Start the server if not in a serverless environment
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+        console.log(`Image uploader available at http://localhost:${port}/image-uploader.html`);
+    });
+}
+
+// Export the Express API for Vercel
+module.exports = app;
