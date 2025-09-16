@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Cast Studios - Turn Calls into Content</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F5F1EB;
+            color: #0B0B0B;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-dark {
+            background-color: #0B0B0B;
+        }
+        .bg-light {
+            background-color: #F5F1EB;
+        }
+        .text-gold {
+            color: #E2B857;
+        }
+        .bg-gold {
+            background-color: #E2B857;
+        }
+        .border-gold {
+            border-color: #E2B857;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-dark text-white py-4 px-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-gold">Self Cast Studios</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="hover:text-gold transition">How It Works</a>
+                <a href="#dashboard" class="hover:text-gold transition">Dashboard</a>
+                <a href="#pricing" class="hover:text-gold transition">Pricing</a>
+                <a href="#faq" class="hover:text-gold transition">FAQs</a>
+            </div>
+            <a href="#pricing" class="bg-gold text-dark px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">Start for $99</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-dark text-white py-20 md:py-32 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Turn a quick phone call into your <span class="text-gold">month of content.</span>
+                </h1>
+                <p class="text-xl mb-8 opacity-90">
+                    Blogs, bios, and social posts — written for you. Plus a dashboard to edit, add images, and publish on your own site.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#pricing" class="bg-gold text-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition text-center">Start for $99/month</a>
+                    <a href="#how-it-works" class="border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-dark transition text-center">How It Works</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="/public/images/hero section image.png" alt="Phone call turning into content" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- The Pain Section -->
+    <section class="py-20 px-6 bg-light">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">"I should write a blog, but I don't."</h2>
+                <p class="text-xl">Sound familiar? You're not alone. Most professionals struggle with:</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="file-text" class="text-gold w-12 h-12 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Outdated Bio</h3>
+                    <p>Your about page still lists accomplishments from 2018.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="calendar" class="text-gold w-12 h-12 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Missing Posts</h3>
+                    <p>Your last social post was months ago despite good intentions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="edit" class="text-gold w-12 h-12 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Writing Feels Hard</h3>
+                    <p>Staring at a blank screen is the worst way to start.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="clock" class="text-gold w-12 h-12 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">No Time for Tech</h3>
+                    <p>Managing websites feels like another full-time job.</p>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto text-center mt-16 pt-8 border-t border-gray-200" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4">We turn those 'shoulds' into content you'll actually publish.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 px-6 bg-dark text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" data-aos="fade-up">How It Works</h2>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between mb-20">
+                <div class="md:w-1/3 text-center mb-10 md:mb-0" data-aos="fade-up">
+                    <div class="bg-gold text-dark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="phone" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">1. Talk</h3>
+                    <p>Hop on a 20–30 minute phone call with our interviewer. No prep needed.</p>
+                </div>
+                <div class="hidden md:block text-gold text-4xl" data-aos="fade-up" data-aos-delay="200">→</div>
+                <div class="md:w-1/3 text-center mb-10 md:mb-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gold text-dark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="edit" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">2. Transform</h3>
+                    <p>We turn your words into 4 blogs, 4 social posts, and a refreshed bio.</p>
+                </div>
+                <div class="hidden md:block text-gold text-4xl" data-aos="fade-up" data-aos-delay="400">→</div>
+                <div class="md:w-1/3 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-gold text-dark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="upload" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">3. Publish</h3>
+                    <p>Copy/paste anywhere — or use your Editing Dashboard to put it live.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 rounded-xl p-8 md:p-12" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-6">What You Get Every Month:</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-slate-700 p-6 rounded-lg">
+                        <div class="bg-gold text-dark w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="file-text" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">4 Blog Posts</h4>
+                        <p class="text-sm opacity-80">Professional, SEO-friendly articles based on your conversation.</p>
+                    </div>
+                    <div class="bg-slate-700 p-6 rounded-lg">
+                        <div class="bg-gold text-dark w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="share-2" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">4 Social Posts</h4>
+                        <p class="text-sm opacity-80">Ready for LinkedIn, Instagram, Facebook, or Twitter.</p>
+                    </div>
+                    <div class="bg-slate-700 p-6 rounded-lg">
+                        <div class="bg-gold text-dark w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="user" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">1 Bio Refresh</h4>
+                        <p class="text-sm opacity-80">Keep your about page current and compelling.</p>
+                    </div>
+                    <div class="bg-slate-700 p-6 rounded-lg">
+                        <div class="bg-gold text-dark w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="monitor" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Editing Dashboard</h4>
+                        <p class="text-sm opacity-80">Full control to edit, add images, and publish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="py-20 px-6 bg-light">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Control your site, no tech skills required.</h2>
+                    <p class="text-xl mb-8">Our Editing Dashboard puts you in control without the complexity.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-gold mr-3 mt-1"></i>
+                            <span>Add, edit, publish, unpublish, or delete content</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-gold mr-3 mt-1"></i>
+                            <span>Upload images and media with simple drag-and-drop</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-gold mr-3 mt-1"></i>
+                            <span>Drop in quotes, slogans, and taglines</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-gold mr-3 mt-1"></i>
+                            <span>Manage profile photo and About/Bio section</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-gold mr-3 mt-1"></i>
+                            <span>Preview and update with one click</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="/public/images/dashboard-image.jpg" alt="Editing Dashboard" class="rounded-xl shadow-2xl border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">From Call → To Content</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-light p-8 rounded-xl" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-6 text-center">Phone Call Notes</h3>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <p class="italic mb-4">"So like, I was thinking about how most people approach networking all wrong..."</p>
+                        <p class="italic mb-4">"There's this thing I do with clients where we focus on quality over quantity..."</p>
+                        <p class="italic">"I guess what I'm trying to say is that relationships matter more than contacts."</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-light p-8 rounded-xl" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-6 text-center">Polished Blog Excerpt</h3>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <h4 class="font-bold text-lg mb-3">Why Quality Trumps Quantity in Professional Networking</h4>
+                        <p class="mb-3">In today's hyper-connected world, it's tempting to measure networking success by the sheer number of LinkedIn connections or business cards collected. But this approach often leads to shallow, transactional relationships that provide little real value.</p>
+                        <p>The most effective networkers focus on cultivating deeper connections with fewer people. Here's how...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-6 bg-dark text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">What Our Clients Say</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-8 rounded-xl" data-aos="fade-up">
+                    <div class="text-gold text-4xl mb-4">"</div>
+                    <p class="text-xl mb-6">I never had time to blog. After a quick call, I had 4 posts ready to go. Game changer.</p>
+                    <div class="flex items-center">
+                        <img src="/public/images/Sarah Johnson testimoinal pic.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm opacity-80">Marketing Consultant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gold text-4xl mb-4">"</div>
+                    <p class="text-xl mb-6">The dashboard makes it easy to keep my site fresh without hiring a web guy.</p>
+                    <div class="flex items-center">
+                        <img src="/public/images/Michael Chen testiomonial pic 1.png" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm opacity-80">Financial Advisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Works -->
+    <section class="py-20 px-6 bg-light">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Why Self Cast Studios Works</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
+                    <div class="bg-gold bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="mic" class="text-gold w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Authentic Voice</h3>
+                    <p>Your words, shaped by our professional writers to sound polished but still like you.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gold bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="clock" class="text-gold w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consistent Output</h3>
+                    <p>No more content droughts. Fresh material every single month.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gold bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="award" class="text-gold w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Professional Polish</h3>
+                    <p>Content that makes you look as good as you are, without the effort.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gold bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="sliders" class="text-gold w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Total Control</h3>
+                    <p>Edit, tweak, or publish exactly how and when you want.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 px-6 bg-dark text-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Simple, Transparent Pricing</h2>
+                <p class="text-xl opacity-90">Everything you need to keep your content fresh, for one flat monthly rate.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-8 md:p-12 shadow-xl" data-aos="zoom-in">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Standard Plan</h3>
+                        <p class="opacity-80">Perfect for professionals who want consistent content.</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="opacity-80">/month</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div>
+                        <h4 class="font-bold mb-4">Includes:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>20–30 min phone call</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>4 blogs, 4 social posts, 1 bio refresh</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>Full Editing Dashboard</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Plus:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>Image uploads & media hosting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>Export content anytime</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-gold mr-2 mt-1"></i>
+                                <span>Cancel anytime</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a href="#" class="block bg-gold text-dark text-center py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">Start for $99/month</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="py-20 px-6 bg-light">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Do I have to get on video?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">No — just a phone call. We find talking is more natural and leads to better content than staring at a camera.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Do I own the content?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">Yes, 100%. Everything we create for you is yours to use however you want, forever.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Can I post it to my own site?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">Absolutely. You can copy/paste to any platform or use our dashboard to publish directly.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Can I add my own content?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">Yes — edit and upload anytime. The dashboard is yours to use however you need.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Do I need tech skills?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">Nope. Everything is designed for one-click edits. If you can use email, you can use our dashboard.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-xl font-bold mb-3 flex justify-between items-center">
+                        <span>Can I cancel anytime?</span>
+                        <i data-feather="chevron-down" class="text-gold"></i>
+                    </h3>
+                    <p class="hidden pt-2">Yes. No contracts, no hassle. Cancel with one click and keep all your content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-6 bg-gold text-dark">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Your voice. Your content. Your site.</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Stop wishing your online presence was better. Make it happen with one call.</p>
+            <a href="#pricing" class="inline-block bg-dark text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">Start for $99/month</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold text-gold mb-6 md:mb-0">Self Cast Studios</div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="hover:text-gold transition"><i data-feather="instagram"></i></a>
+                    <a href="#" class="hover:text-gold transition"><i data-feather="twitter"></i></a>
+                    <a href="#" class="hover:text-gold transition"><i data-feather="linkedin"></i></a>
+                </div>
+                <div class="text-sm opacity-80">
+                    © 2023 Self Cast Studios. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('#faq h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.setAttribute('data-feather', 'chevron-up');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.setAttribute('data-feather', 'chevron-down');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>
