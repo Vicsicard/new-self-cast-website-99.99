@@ -20,4 +20,60 @@
         <priority>0.5</priority>
     </url>
     
+    <!-- Blog Index -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Post 1 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/how-to-create-content-without-writing/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Post 2 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/affordable-blog-writing-service-small-business/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Post 3 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/turn-phone-calls-into-blog-posts/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Post 4 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/content-creation-for-busy-professionals/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Post 5 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/outsource-content-marketing-small-business/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Post 6 -->
+    <url>
+        <loc>https://www.selfcaststudios.com/blog/professional-content-writing-service/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
 </urlset>

@@ -8,6 +8,23 @@ const port = process.env.PORT || 3000;
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
+// Handle blog routes - serve .html files without extension
+app.get('/blog/:slug/', (req, res) => {
+    const slug = req.params.slug;
+    const filePath = path.join(__dirname, 'blog', `${slug}.html`);
+    
+    if (fs.existsSync(filePath)) {
+        res.sendFile(filePath);
+    } else {
+        res.status(404).send('Blog post not found');
+    }
+});
+
+// Handle blog index
+app.get('/blog/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'blog', 'index.html'));
+});
+
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
