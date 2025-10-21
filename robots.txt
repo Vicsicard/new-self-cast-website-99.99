@@ -1,0 +1,42 @@
+# robots.txt for Self Cast Studios
+# AHP Module 2.0 enabled - AI crawlers allowed for monitoring
+
+User-agent: *
+Allow: /
+
+# Disallow only upload directory to prevent indexing of uploaded images
+Disallow: /api/upload
+
+# Sitemap location
+Sitemap: https://www.selfcaststudios.com/sitemap.xml
+
+# Allow ALL AI crawlers and search engines for AHP monitoring
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
