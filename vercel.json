@@ -36,6 +36,14 @@
       "dest": "server.js"
     },
     {
+      "src": "/blog/?$",
+      "dest": "/blog/index.html"
+    },
+    {
+      "src": "/blog/([^/]+)/?$",
+      "dest": "/blog/$1.html"
+    },
+    {
       "src": "/sitemap.xml",
       "headers": {
         "Content-Type": "application/xml; charset=utf-8"
